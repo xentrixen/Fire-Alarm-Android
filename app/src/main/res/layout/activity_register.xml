@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/logo_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="@string/application_logo"
+            android:src="@mipmap/ic_launcher_foreground"
+            app:layout_constraintBottom_toTopOf="@+id/app_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginBottom="24dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/app_name"
+            android:textColor="@android:color/white"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:fontFamily="sans-serif-black"
+            app:layout_constraintBottom_toTopOf="@+id/name"
+            app:layout_constraintEnd_toEndOf="@+id/logo_image"
+            app:layout_constraintStart_toStartOf="@+id/logo_image"
+            app:layout_constraintTop_toBottomOf="@+id/logo_image" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/white"
+            android:ems="10"
+            android:hint="@string/name"
+            android:inputType="textEmailAddress"
+            android:padding="8dp"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/username"
+            app:layout_constraintEnd_toEndOf="@+id/app_name"
+            app:layout_constraintStart_toStartOf="@+id/app_name"
+            app:layout_constraintTop_toBottomOf="@+id/app_name" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/white"
+            android:ems="10"
+            android:hint="@string/email_address"
+            android:inputType="textEmailAddress"
+            android:padding="8dp"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/password"
+            app:layout_constraintEnd_toEndOf="@+id/name"
+            app:layout_constraintStart_toStartOf="@+id/name"
+            app:layout_constraintTop_toBottomOf="@+id/name" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/white"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:padding="8dp"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/confirm_password"
+            app:layout_constraintEnd_toEndOf="@+id/username"
+            app:layout_constraintStart_toStartOf="@+id/username"
+            app:layout_constraintTop_toBottomOf="@+id/username" />
+
+        <EditText
+            android:id="@+id/confirm_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@android:color/white"
+            android:ems="10"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword"
+            android:padding="8dp"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/register"
+            app:layout_constraintEnd_toEndOf="@+id/password"
+            app:layout_constraintStart_toStartOf="@+id/password"
+            app:layout_constraintTop_toBottomOf="@+id/password" />
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="@string/register"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/cancel"
+            app:layout_constraintEnd_toEndOf="@+id/confirm_password"
+            app:layout_constraintStart_toStartOf="@+id/confirm_password"
+            app:layout_constraintTop_toBottomOf="@+id/confirm_password" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:text="@string/cancel"
+            android:textAllCaps="true"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/register"
+            app:layout_constraintStart_toStartOf="@+id/register"
+            app:layout_constraintTop_toBottomOf="@+id/register" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

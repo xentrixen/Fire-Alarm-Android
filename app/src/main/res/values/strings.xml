@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">BFP Fire Alarm System</string>
+    <string name="citizen">Citizen</string>
+    <string name="fire_personnel">Fire Personnel</string>
+    <string name="application_logo">Application Logo</string>
+    <string name="login">Login</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="name">Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="cancel">Cancel</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="logout">Logout</string>
+    <string name="profile">Profile</string>
+    <string name="report">Report</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="username">Username</string>
+    <string name="refresh">Refresh</string>
+    <string name="latitude_location">Latitude (Location)</string>
+    <string name="longitude_location">Longitude (Location)</string>
+    <string name="reporter_name">Reporter\'s Name</string>
+    <string name="reporter_email">Reporter\'s Email</string>
+    <string name="reported_on">Reported On</string>
+    <string name="set_level_of_fire">Set level of fire</string>
+    <string name="delete">Delete</string>
+    <string name="level_of_fire">Level of Fire</string>
+    <string name="fire_report_image">Fire report image</string>
+</resources>

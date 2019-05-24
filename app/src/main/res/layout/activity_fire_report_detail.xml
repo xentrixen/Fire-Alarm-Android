@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitCenter"
+            android:background="@android:color/darker_gray"
+            android:contentDescription="@string/fire_report_image" />
+
+        <TextView
+            style="@style/DetailLabelTextView"
+            android:text="@string/level_of_fire" />
+
+        <TextView
+            android:id="@+id/level_of_fire"
+            style="@style/DetailValueTextView"
+            tools:text="-" />
+
+        <TextView
+            style="@style/DetailLabelTextView"
+            android:text="@string/latitude_location" />
+
+        <TextView
+            android:id="@+id/latitude"
+            style="@style/DetailValueTextView"
+            tools:text="10.255824°" />
+
+        <TextView
+            style="@style/DetailLabelTextView"
+            android:text="@string/longitude_location" />
+
+        <TextView
+            android:id="@+id/longitude"
+            style="@style/DetailValueTextView"
+            tools:text="123.812581°" />
+
+        <TextView
+            style="@style/DetailLabelTextView"
+            android:text="@string/reporter_name" />
+
+        <TextView
+            android:id="@+id/reporter_name"
+            style="@style/DetailValueTextView"
+            tools:text="Jeric Cordova" />
+
+        <TextView
+            style="@style/DetailLabelTextView"
+            android:text="@string/reporter_email" />
+
+        <TextView
+            android:id="@+id/reporter_email"
+            style="@style/DetailValueTextView"
+            tools:text="cordovajeric@gmail.com" />
+
+        <TextView
+            style="@style/DetailLabelTextView"
+            android:text="@string/reported_on" />
+
+        <TextView
+            android:id="@+id/reported_on"
+            style="@style/DetailValueTextView"
+            tools:text="2019-03-29 03:29:36" />
+
+    </LinearLayout>
+</ScrollView>
